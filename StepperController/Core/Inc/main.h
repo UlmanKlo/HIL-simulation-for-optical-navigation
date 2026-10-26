@@ -43,13 +43,18 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+#define DIR_GPIO_PORT  GPIOF
+#define ENA_GPIO_PORT  GPIOF
+#define DIR_PIN GPIO_PIN_13
+#define ENA_PIN GPIO_PIN_14
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 
 /* USER CODE END EM */
+
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
